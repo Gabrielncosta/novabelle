@@ -1,21 +1,16 @@
 <template>
-    <div class="bs-docs-section clearfix">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="bs-component">
-              <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-              <div class="col-6 col-md-4">
-                <img src="../assets/novabelle.png" class="img-fluid" alt="" style="width: 300px;">
-              </div>
 
-            <button class="navbar-toggler" style="background-color: #ccc !important;" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-              <div class="col-sm-6 col-sm-offset-1 col-md-offset-0 col-md-9 col-xs-6">
 
-                <div class="collapse navbar-collapse" id="navbarColor02">
-                  <ul class="navbar-nav">
-                    
+
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<img src="../assets/novabelle.png" class="img-fluid" alt="" style="width: 300px;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+              
                       <router-link class="nav-link" tag="li" active-class="active" exact to="/"><a>Home</a></router-link>
                     
                     
@@ -26,14 +21,13 @@
 
 
                       <router-link class="nav-link" to="/contato"  tag="li" active-class="active" exact><a>Contato</a></router-link>
-                  </ul>
-                </div>
-              </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-    </div>
+    </ul>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">(16) 3442-0745</a>
+      </li>
+  </div>
+</nav>
+       
     
 </template>
 
@@ -44,6 +38,10 @@ export default {
 </script>
 
 <style scoped>
+nav {
+    box-sizing: inherit !important;
+}
+
 .navbar-nav a {
   font-size: 1.3em;
   color:rgba(0, 0, 0, 0.55);

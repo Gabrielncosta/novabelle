@@ -1,22 +1,15 @@
 <template>
-    <div class="footer">
-        <!-- Footer -->
-<footer class="page-footer font-small blue">
-
-  <!-- Copyright -->
-    <div class="col-12">
-        <figure class="text-center">
-            <img src="../assets/novabelle.png" class="img-fluid" alt="" style="width: 300px;">
-        </figure>
-    </div>
-  <div class="footer-copyright text-center py-3">© 2019 - Novabelle - Direitos Reservados
-    <a href="https://mdbootstrap.com/education/bootstrap/"> n.com</a>
+ 
+<footer class=" font-small blue">
+  <figure class="text-center">
+      <img src="../assets/novabelle.png" class="img-fluid" alt="" style="width: 300px;">
+  </figure>
+  <div class="footer-copyright text-center py-3" style="color: white;">© 2019. Novabelle – Agência de Marketing Digital. Todos os direitos reservados.
+    <p class="address">R. Virgílio de Carvalho Neves Neto, 996 - Res. e Comercial Palmares - Ribeirão Preto - SP, 14092-440
+</p>
   </div>
-  <!-- Copyright -->
-
 </footer>
-<!-- Footer -->
-    </div>
+
 </template>
 
 <script>
@@ -25,3 +18,16 @@ export default {
     
 }
 </script>
+
+<style scoped>
+  
+  footer {
+    background-color: #3f0f41;
+  }
+
+  .address {
+    color: rgba(255,255,255, 0.5);
+  }
+
+
+</style>
