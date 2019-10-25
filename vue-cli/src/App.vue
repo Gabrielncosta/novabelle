@@ -1,12 +1,20 @@
 <template>
   <div id="app">
-    <h1>hello fiu</h1>
-    <site-home></site-home>
+    <siteHeader></siteHeader>
+    <router-view></router-view>
+    <siteFooter></siteFooter>
   </div>
 </template>
 
 <script>
+import Header from './components/header';
+import Footer from './components/footer';
+
 export default {
+  components: {
+    siteHeader: Header,
+    siteFooter: Footer,
+  }
 }
 </script>
 
@@ -17,7 +25,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 h1, h2 {
